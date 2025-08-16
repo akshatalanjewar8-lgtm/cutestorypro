@@ -3,45 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our First Meeting Story</title>
-  <style>
-    /* All your CSS remains here */
-  </style>
+  <title>Our First Meeting</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Your animation HTML remains here -->
-  
-  <!-- Updated audio tags with local paths -->
   <audio id="bgMusic" loop>
-    <source src="assets/romantic.mp3" type="audio/mpeg">
+    <source src="https://assets.mixkit.co/music/preview/mixkit-happy-times-158.mp3" type="audio/mpeg">
   </audio>
   <audio id="ringtone">
-    <source src="assets/ringtone.mp3" type="audio/mpeg">
+    <source src="https://assets.mixkit.co/sfx/preview/mixkit-old-phone-ringing-1003.mp3" type="audio/mpeg">
   </audio>
   <audio id="heartSound">
-    <source src="assets/heartbeat.mp3" type="audio/mpeg">
+    <source src="https://assets.mixkit.co/sfx/preview/mixkit-positive-interface-beep-221.mp3" type="audio/mpeg">
   </audio>
   <audio id="voiceSound">
-    <source src="assets/hello.mp3" type="audio/mpeg">
+    <source src="https://assets.mixkit.co/sfx/preview/mixkit-casual-male-voice-says-hello-503.mp3" type="audio/mpeg">
   </audio>
 
-  <script>
-    // Audio initialization with error handling
-    document.addEventListener('click', function() {
-      const audios = [
-        document.getElementById('bgMusic'),
-        document.getElementById('ringtone'),
-        document.getElementById('heartSound'),
-        document.getElementById('voiceSound')
-      ];
-      
-      audios.forEach(audio => {
-        audio.volume = 0.3;
-        audio.play().catch(e => console.log("Audio blocked:", e));
-      });
-    }, { once: true });
+  <div class="scene" id="scene">
+    <!-- All your HTML content remains the same until the script tag -->
+  </div>
 
-    // Your existing animation JavaScript
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
